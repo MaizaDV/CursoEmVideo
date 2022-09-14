@@ -1,0 +1,36 @@
+=== REPETIÇÕES EM JS ===
+-- estrutura de repetição com teste lógico no início --
+while (condição) {
+    bloco
+}
+
+--exemplo--
+var c = 1
+while (c <= 6){
+    console.log(`Passo ${c}`)
+    c++ //c = c + 1
+}
+
+
+-- estrutura de repetição com teste lógico no final --
+do {
+    bloco
+} while (condição)
+
+--exemplo--
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c++ //c = c + 1
+} while (c <= 6)
+
+
+-- estrutura de repetição com variável de controle --
+for (inicio; teste; incremento){        //Dentro do teste lógico pode ser usado, while, do while, if, switch e etc, não tem uma limitação quanto a isso
+    bloco
+}
+
+--exemplo--
+for (var c = 0; c <= 6; c++){
+    console.log(`Passo ${c}`)
+}

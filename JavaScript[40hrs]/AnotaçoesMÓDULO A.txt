@@ -1,0 +1,45 @@
+
+<h1>usado em html para título</h1>
+<p>usado em html para Parágrafo</p>
+
+--html linguagem de marcação 
+--CSS liguagem de estilo
+-conteúdo em html
+-estilo em CSS
+-interação em JavaScript
+
++++ COMENTÁRIOS +++
+--Em CSS /* */                                                                                                        
+--Em html <!--   -->
+--Em JavaScript //
+
++++ STRING PASSA A SER NÚMERO +++
+-- Number.parseInt(n)       // o n usado é um número inteiro
+-- Number.parseFloat(n)     // usado em números flutuantes, números com vírgula ,
+-- Number(n)        // o java script identifica qual o tipo de número é usado pelo usuário
+
+++ CONCATENAÇÃO ++
+-- (number + number) para adição
+-- (string + string) para concatenação
+
++++ NÚMERO PASSA A SER STRING +++
+-- String(n)    // n , que era um número, passa a ser visto como string pela máquina
+-- n.toString() // joga o n para uma string
+
+++ FORMATANDO NÚMERO ++
+var n = 1543.5
+-- n.toFixed(2)  // número para fixo com duas casas
+-- n.toFixed(2).replace(".", ",")   // troca o ponto pela vírgula
+-- n.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})   //localiza para real
+
++++ FORMATANDO STRING +++
+var s = 'JavaScript '
+'Eu estou aprendendo s'     //não faz concatenação
+'Eu estou aprendendo' + s   //usa concatenação
+`Eu estou aprendendo ${s}`  //usa template string, é usado entre crases ``. ${} -- é chamado de place holder
+-- s.length         //Quantos caracteres a string tem
+-- s.toUpperCase()  //Joga tudo para MAIÚSCULAS
+-- s.toLowerCase()  //joga tudo para minúsculas
+
+-document.write(s)  // comando de escrever no documento
+

@@ -1,0 +1,37 @@
+=== DOM === Docment Object Model(modelo de objetos para documentos)
+    É um conjunto de objetos dentro do navegador que da acesso aos componentes internos do web site
+
+== ÁRVORE DOM ==
+    Começa da raíz(dentro do navegador é o window), dentro do window tem vários outros objetos exemplos:
+    - objeto LOCATION que diz qual a localização do site, URL, qual foi a págima atual, anterior;
+    - DOCUMENT que é o documento atual;
+    - HISTORY que vai guardando de onde você veio e pra onde vai(histórico)
+    == em DOCUMENT, HEAD e BODY é filho(chield) de html, e html é pai(parents) deles,
+    quem tá acima na árvore hierárquica é parents(pai), quem tá abaixo na ávore é chield(filho) ==
+    - dentro de HEAD existe vários tags, meta, title, etc;
+    - dentro de BODY no documento ex005.html temos <h1>, dois parágrafos<p> e uma <div>, dentro do 2° <p> tem um filho<strong>.
+    
+    === Selecionando Elementos ===
+    == ELEMENTO é tudo e qualquer coisa que aparecer na árvore DOM, e você pode selecionar esses elementos para navegar pela árvore DOM;
+    - Exsitem vários métodos para navegar pela árvore DOM, alguns métodos são por marca(tags), ID, nome, por classe, por seletor(css);
+    = por MARCA ou tag name, o camando é getElementsByTagName(), consegue selecionar mais de 1 objeto com ele;
+    = por ID, comando getElementById(),pode identificar um parágrafo ou div;
+    = por NOME, comando getElementsByName()
+    = por CLASSE, comando getElementsByClassName()
+    = por SELETOR, comando querySelector(), querySelectorAll() 
+
+    == toda div é representado por uma #, toda classe é representada por um .; quando é ID #, quando é classe .
+
+=== EVENTO DOM ===
+    Evento é tudo aquilo que possa acontecer com qualquer elemento
+    = site para refêrencias de eventos https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+=== FUNÇÕES ===
+    É um conjunto de códigos que só vão ser executadas quando um evento occorrer
+        == exemplo
+            vou programar 10 linhas, essas linha tem o nome de bloco, esses 10 linhas não são executavéis automaticamente,
+        essas linhas vão ser disparadas somente quando o evento ocorrer, para ser executada ela precisa estar dentro de um bloco,
+        em JavaScript ele fica entre {}, o bloco tem que ser nomeado com uma function;
+        -function{} => isso é uma função anônima, é uma função que não tem nome, mas para funcionar ela precisa de um nome
+        geralmente leva o nome da ação que precisa ser feita na function => comando function ação(){bloco de linhas}
+        -opcionalmente pode colocar dentro dos () alguns parametros, => function ação(parametros){bloco de linhas}

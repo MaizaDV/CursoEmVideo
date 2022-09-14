@@ -1,0 +1,67 @@
+--- OPERADORES DO JS ---
+    Existem operadores:
+    --Aritméticos
+    --Atribuição
+    --Relacionais
+    --Lógicos
+    --Ternários e outros
+
+=== OPERADORES ARITMÉTICOS ===                           = ORDEM DE PRECEDÊNCIA =
+-- 5 + 2 = 7        + Soma                               -1° ()
+-- 5 - 2 = 3        - Dminuíção                          -2° **
+-- 5 * 2 = 10       * Multiplicação                      -3° *, /, %
+-- 5 / 2 = 2.5      / Divisão real                       -4° +, -
+-- 5 % 2 = 1        % Resto da divisão inteira
+-- 5 ** 2 = 25      ** Potência
+
+=== AUTO-ATRIBUIÇÕES ===             ==incrementos=
+var n = 3                               var x = 5    
+n = n + 4   =>  n += 4                  x = x + 1   =>  x += 1  =>  x++
+n = n - 5   =>  n -= 5                  x = x - 1   =>  x -= 1  =>  x--
+n = n * 4   =>  n *= 4
+n = n / 2   =>  n /= 2
+n = n ** 2  =>  n **= 2
+n = n % 2   =>  n %= 2
+
+=== RELACIONAIS ===
+    Para toda a expressão que tenha um operador relacional ligado
+a ela o resultado desse expressão sempre será um valor boleano, 
+vai ser um valor do tipo verdadeiro ou falso 
+
+-- >    operador maior que                  5 > 2   =>  true 
+-- <    operador menor que                  7 < 4   =>  false
+-- >=   operador maior ou igual             8 >= 8  =>  true
+-- <=   operador menor ou igual             9 <= 7  =>  false
+-- ==   operador igualdade                  5 == 5  =>  true
+-- !=   operador diferente de(Negação)      4 != 4  =>  false
+
+=== operador relacional de identidade ===
+
+5 == 5  => true                 O sinal de igualdade não testa o tipo, 
+5 == "5"    =>  true            ele analisa a grandeza
+
+5 === "5"   =>  false           === testa se eles são idênticos,
+5 === 5     =>  true            idêntico ele é do mesmo valor e do mesmo tipo
+
+5 !== "5"   =>  true    desigual restrito:são de tipos diferentes, mas o valor interno é o mesmo
+
+=== OPERADORES LÓGICOS ===
+
+!   =>  Negação =>  Operador unário   =>true ou false
+&&  =>  Conjunção(e) => Operador binário(são dois valores, um de cada lado) => true&&true=>true o resto fica false
+||  =>  Disjunção(or) => Operador binário => basta um ser verdadeiro para ser true. false||false=>false
+
+== Ordem de PRECEDÊNCIA (dentro de uma expressão)== 
+1° Operadores Aritméticos
+2° Operadores Relacionais
+3° Negação(!)
+4° e(&&)
+5° ou(||)
+
+=== idade >= 15 && idade <= 17  lê-se a idade está entre 15 e 17?(idade é maior ou igual a 15 e menor ou igual a 17)
+=== estado == "RJ" || estado == "SP"  lê-se o estado é RJ ou SP?(estado igual a RJ ou SP, qualquer um dos dois q tiver certo é true)
+=== salário >= 1500 && sexo != "M"  lê-se O salário é acima de 1500 e não é homen? 
+
+=== OPERADOR TERNÁRIO ===
+    teste?true:false        => é ternário pois junta trêS operandos
+    o primeiro bloco é um teste lógico e o que tá no meio é o q vai acontecer quando o teste for verdadeiro  no final, quando for falso

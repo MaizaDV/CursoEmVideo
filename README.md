@@ -1,5 +1,5 @@
 # CursoEmVideo
-Cursos feitos por Gustavo Guanabara na Plataforma Curso em Vídeo[Curso em Vídeo](https://www.cursoemvideo.com/cursos/), e usados por mim como aprendizado.
+Cursos feitos por Gustavo Guanabara na Plataforma Curso em Vídeo [Curso em Vídeo](https://www.cursoemvideo.com/cursos/), e usados por mim como aprendizado.
 
 ### informações
 

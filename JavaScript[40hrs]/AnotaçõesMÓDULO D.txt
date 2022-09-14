@@ -1,0 +1,41 @@
+=== CONDIÇÕES ===
+    É um desvio condicional dentro de um programa, são dois caminhos possíveis,
+    são dois blocos, um para quando a condição for verdadeira e o outro para falsa, o bloco pode ter vários comandos 
+    if (condição){
+        bloco true
+    }else{
+        bloco false
+    }
+
+    === TIPOS DE CONDIÇÃO ===
+    - condição SIMPLES, se a condição for falsa, nada acontece de especial, o programa segue 
+    - comando => if (condição){true}
+    - condição composta,
+    - comando => if (condição){true}else {false}
+
+    === CONDIÇÕES ANINHADAS ===
+    - É uma condição dentro da outra, em forma de ninho
+    ==exemplo
+    if (cond1){
+        bloco1
+    } else{
+        if (cond2){
+            bloco2
+        } else {
+            bloco3
+        }
+    }
+
+    === CONDIÇÃO MÚLTIPLA ===
+        Serve para valores fixos, ela tem a possibilidade de valores fixos
+    -exemplo; default e como se fosse o else do switch, dentro de cada bloco se usa break
+    switch (expressão) {
+        case valor 1:
+            break
+        case valor 2:
+            break
+        case valor 3:
+            break
+        default:
+            break
+    }
